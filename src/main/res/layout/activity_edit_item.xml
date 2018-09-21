@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comp5216.sydney.edu.au.comp5216hw1.EditToDoItemActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_or_add_item"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etEditItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/iTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEditItem"
+        android:layout_below="@+id/etEditItem"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEditItem"
+        android:layout_below="@+id/iTime"
+        android:layout_marginTop="25dp"
+        android:onClick="onSubmit"
+        android:text="Save"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etEditItem"
+        android:layout_alignTop="@+id/btnSave"
+        android:onClick="onCancel"
+        android:text="Cancel"
+        android:textSize="16dp" />
+
+</RelativeLayout>
+
